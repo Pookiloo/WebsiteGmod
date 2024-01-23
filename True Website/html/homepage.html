@@ -30,19 +30,26 @@
         </div>
 
         <div class="menu-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="../html/homepage.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/updates.html">Updates</a></li>
+          <li><a href="../html/forum.html">Forum</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
         </div>
       </div>
     </div>
   </nav>
+
+  
+
 </body>
 
 <div class="fade-in-title">
-  <p>Project Zenin</p>
+  <p><br>Thank you for being apart of our community</p>
+</div>
+
+<div class="logo">
+  <h1>Project Zenin</h1>
 </div>
 
 <div class="fade-in-text">
@@ -52,5 +59,29 @@
     involved and enjoying their time on our server bonding with people and making friends. Launching soon, be part of
     the excitement!</p>
 </div>
+
+<section class="headerpic">
+  <img class="mySlides" src="../images/serverbanner2.png" style="width:98vw; height: 25vh;">
+  <img class="mySlides" src="../images/filler2.jpg" style="width: 98vw; height: 25vh;">
+  <img class="mySlides" src="../images/filler3.jpg" style="width:98vw; height: 25vh;">
+</section>
+
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+</script>
 
 </html>
